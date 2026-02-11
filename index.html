@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeu Concours - Foot Locker</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="images/logo-footlocker.png"
+        alt="Foot Locker Logo"
+        class="logo"
+      />
+    </header>
+
+    <main class="game-container">
+      <section class="intro">
+        <h1>
+          Tente ta chance avec Foot Locker <br />
+          et ouvre une boîte de sneakers !
+        </h1>
+        <p>
+          Plusieurs gains se cachent dans les boîtes de chaussures, à toi de
+          trouver le tien ! <br />
+          Clique sur "JE JOUE" pour commencer.
+        </p>
+      </section>
+
+      <section class="rewards-panel">
+        <h2>Lots à gagner :</h2>
+
+        <ul class="rewards-list">
+          <li class="reward-item">
+            <img src="images/badge-10.png" alt="Réduction 10%" />
+            <h3>-10%</h3>
+            <p class="stock"><span id="stock-10">300</span> lots restants</p>
+          </li>
+
+          <li class="reward-item">
+            <img src="images/badge-20.png" alt="Réduction 20%" />
+            <h3>-20%</h3>
+            <p class="stock"><span id="stock-20">200</span> lots restants</p>
+          </li>
+
+          <li class="reward-item">
+            <img src="images/badge-50.png" alt="Réduction 50%" />
+            <h3>-50%</h3>
+            <p class="stock"><span id="stock-50">50</span> lots restants</p>
+          </li>
+
+          <li class="reward-item">
+            <img src="images/badge-chaussure.png" alt="Une paire gratuite" />
+            <h3>1 PAIRE</h3>
+            <p class="stock"><span id="stock-pair">10</span> lots restants</p>
+          </li>
+        </ul>
+      </section>
+
+      <a href="formulaire.html" style="text-decoration: none">
+        <button type="button" class="btn-red"><strong>Je joue</strong></button>
+      </a>
+    </main>
+  </body>
+</html>
