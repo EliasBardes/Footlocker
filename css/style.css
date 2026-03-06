@@ -396,6 +396,9 @@ form {
     height: 140px;
   }
 
+
+/**-- Formulaire Responsive Design --**/
+
   .card {
     width: 95%; 
     height: auto; 
