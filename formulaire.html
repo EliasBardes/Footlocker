@@ -6,6 +6,7 @@
     <title>Formulaire</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
     <header>
       <img
@@ -14,5 +15,94 @@
         class="logo"
       />
     </header>
+
+    <main class="form-page">
+      <section class="card">
+        <div class="card-header">
+          <h1>Apprenons à nous connaître !</h1>
+          <p>
+            Remplis ce formulaire pour tenter ta chance.<br />
+            Une seule participation possible entre le XX/XX et le XX/XX.
+          </p>
+        </div>
+
+        <form action="F.html" method="get">
+          <div class="fields-container">
+            <div class="field">
+              <label for="prenom">Prénom* :</label>
+              <input type="text" id="prenom" name="prenom" required />
+            </div>
+            <div class="field">
+              <label for="nom">Nom* :</label>
+              <input type="text" id="nom" name="nom" required />
+            </div>
+            <div class="field">
+              <label for="email">Email* :</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="field">
+              <label for="telephone">Téléphone* :</label>
+              <input
+                type="tel"
+                id="telephone"
+                name="telephone"
+                placeholder="Ex : 06 12 34 56 78"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="departement">Département* :</label>
+              <input
+                type="text"
+                id="departement"
+                name="departement"
+                placeholder="Ex : 75, 93, 94"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="magasin">Magasin le plus proche :</label>
+              <input type="text" id="magasin" name="magasin" />
+            </div>
+          </div>
+
+          <p id="aide-obligatoire">* champs obligatoires</p>
+
+          <div class="consent-container">
+            <div class="checkbox-line">
+              <input
+                type="checkbox"
+                id="reglement"
+                name="reglement"
+                value="accepte"
+                required
+              />
+              <label for="reglement"
+                >J’ai lu et j’accepte le règlement du jeu*</label
+              >
+            </div>
+            <div class="checkbox-line">
+              <input
+                type="checkbox"
+                id="donnees"
+                name="donnees"
+                value="accepte"
+                required
+              />
+              <label for="donnees"
+                >J’ai lu et compris les informations relatives à la protection
+                de mes données personnelles*</label
+              >
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn-red">
+              <strong>Je joue</strong>
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
