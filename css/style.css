@@ -222,12 +222,13 @@ header {
   content: url("../images/box-semi-closed.png");
 }
 
-/* --- PAGE Formulaire  --- */
+/* --- PAGE Formulaire (Simplifiée) --- */
 
 form {
   display: flex;
   flex-direction: column;
-  flex: 1; 
+  flex: 1; /* Force le formulaire à s'étirer jusqu'au bas de la .card */
+  width: 100%;
 }
 
 .form-page {
@@ -237,6 +238,7 @@ form {
   padding: 40px 0;
 }
 
+/*-- Card Carre Gris --*/
 .card {
   width: 760px;
   height: 735px; 
@@ -258,7 +260,7 @@ form {
   align-items: center;
   text-align: center;
   width: 100%;
-
+  /* Pas besoin de gap ici car la .card gère l'espace avec le form */
 }
 
 .card-header h1 {
@@ -284,7 +286,7 @@ form {
   opacity: 0.8;
 }
 
-/* Alignement des champs */
+/*-- Alignement des champs --*/
 .fields-container {
   display: flex;
   width: 100%;
@@ -318,7 +320,8 @@ form {
   padding-bottom: 5px;
 }
 
-/* Cases à cocher */
+/**-- Conditions --**/
+
 .consent-container {
   margin-top: 10px;
   display: flex;
@@ -337,8 +340,10 @@ form {
   margin-top: auto; 
   display: flex;
   justify-content: center;
-  padding-bottom: 10px;
+  padding-bottom: 10px; /* Petit ajustement pour ne pas coller au bord bas */
 }
+
+
 
 
 /* --- RESPONSIVE DESIGN --- */
@@ -390,6 +395,9 @@ form {
     width: 140px; 
     height: 140px;
   }
+
+
+/**-- Formulaire Responsive Design --**/
 
   .card {
     width: 95%; 

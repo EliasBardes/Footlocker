@@ -26,8 +26,7 @@
           </p>
         </div>
 
-        <form action="#" method="post">
-
+        <form action="page-3.html" method="get">
           <div class="fields-container">
             <div class="field">
               <label for="prenom">Prénom* :</label>
@@ -48,6 +47,7 @@
                 id="telephone"
                 name="telephone"
                 placeholder="Ex : 06 12 34 56 78"
+                required
               />
             </div>
             <div class="field">
@@ -57,6 +57,7 @@
                 id="departement"
                 name="departement"
                 placeholder="Ex : 75, 93, 94"
+                required
               />
             </div>
             <div class="field">
@@ -64,17 +65,30 @@
               <input type="text" id="magasin" name="magasin" />
             </div>
           </div>
+
           <p id="aide-obligatoire">* champs obligatoires</p>
 
           <div class="consent-container">
             <div class="checkbox-line">
-              <input type="checkbox" id="reglement" required />
+              <input
+                type="checkbox"
+                id="reglement"
+                name="reglement"
+                value="accepte"
+                required
+              />
               <label for="reglement"
                 >J’ai lu et j’accepte le règlement du jeu*</label
               >
             </div>
             <div class="checkbox-line">
-              <input type="checkbox" id="donnees" required />
+              <input
+                type="checkbox"
+                id="donnees"
+                name="donnees"
+                value="accepte"
+                required
+              />
               <label for="donnees"
                 >J’ai lu et compris les informations relatives à la protection
                 de mes données personnelles*</label
@@ -83,7 +97,7 @@
           </div>
 
           <div class="form-actions">
-            <button type="button" class="btn-red" onclick="window.location.href='page-3.html'">
+            <button type="submit" class="btn-red">
               <strong>Je joue</strong>
             </button>
           </div>
