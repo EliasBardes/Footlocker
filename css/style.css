@@ -222,13 +222,12 @@ header {
   content: url("../images/box-semi-closed.png");
 }
 
-/* --- PAGE Formulaire (Simplifiée) --- */
+/* --- PAGE Formulaire  --- */
 
 form {
   display: flex;
   flex-direction: column;
-  flex: 1; /* Force le formulaire à s'étirer jusqu'au bas de la .card */
-  width: 100%;
+  flex: 1; 
 }
 
 .form-page {
@@ -259,7 +258,7 @@ form {
   align-items: center;
   text-align: center;
   width: 100%;
-  /* Pas besoin de gap ici car la .card gère l'espace avec le form */
+
 }
 
 .card-header h1 {
@@ -275,7 +274,7 @@ form {
   font-size: 18px;
   line-height: 1.4;
   margin: 0 auto;
-  max-width: 500px; /* Pour forcer le retour à la ligne comme sur Figma */
+  max-width: 500px; 
 }
 
 #aide-obligatoire {
@@ -304,7 +303,7 @@ form {
   white-space: nowrap;
   text-align: left;
   font-size: 18px;
-  padding-bottom: 5px; /* Pour ne pas toucher la ligne */
+  padding-bottom: 5px; 
 }
 
 .field input {
@@ -335,10 +334,10 @@ form {
 }
 
 .form-actions {
-  margin-top: auto; /* Pousse le bouton vers le bas de la carte */
+  margin-top: auto; 
   display: flex;
   justify-content: center;
-  padding-bottom: 10px; /* Petit ajustement pour ne pas coller au bord bas */
+  padding-bottom: 10px;
 }
 
 
