@@ -340,7 +340,15 @@ form {
   justify-content: center;
   padding-bottom: 10px; /* Petit ajustement pour ne pas coller au bord bas */
 }
-
+.game-container-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1080px;
+  min-height: 583px;
+  gap: 88px;
+  margin: 40px auto;
+}
 
 /* --- RESPONSIVE DESIGN --- */
 
@@ -423,3 +431,5 @@ form {
     font-size: 12px;
   }
 }
+
+
