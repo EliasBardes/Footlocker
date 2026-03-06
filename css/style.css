@@ -222,7 +222,6 @@ header {
   content: url("../images/box-semi-closed.png");
 }
 
-/
 
 /* --- FORMULAIRE --- */
 
@@ -240,6 +239,7 @@ form {
   padding: 40px 0;
 }
 
+/*-- Card Carre Gris --*/
 .card {
   width: 760px;
   height: 735px; 
@@ -285,6 +285,65 @@ form {
   margin-bottom: 10px;
   opacity: 0.8;
 }
+
+/*-- Alignement des champs --*/
+.fields-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.field label {
+  width: 200px;
+  white-space: nowrap;
+  text-align: left;
+  font-size: 18px;
+  padding-bottom: 5px; 
+}
+
+.field input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  padding: 5px;
+  outline: none;
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+
+/**-- Conditions --**/
+
+.consent-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+.checkbox-line {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.form-actions {
+  margin-top: auto; 
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px; 
+}
+
+
 
 
 /* --- RESPONSIVE DESIGN --- */
