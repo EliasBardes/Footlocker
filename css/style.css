@@ -183,7 +183,7 @@ header {
 }
 
 
-
+/* --- taille boite page 4 et 5 --- */
 .box-resultat {
   display: flex;
   justify-content: center;
@@ -198,6 +198,8 @@ header {
   object-fit: contain;
 
 }
+/* --- //////////////--- */
+
 
 .titre {
   font-family: var(--font-title);
@@ -438,3 +440,4 @@ form {
   .checkbox-line {
     font-size: 12px;
   }
+}
