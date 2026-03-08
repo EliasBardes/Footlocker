@@ -185,6 +185,10 @@ header {
 
 /* --- taille boite page 4 et 5 --- */
 .box-resultat {
+    background-image: url('../images/confétie.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -211,9 +215,10 @@ header {
 }
 
 .sous-titre {
-  font-family: var(--font-body);
-    font-weight: 900;         
-    font-size: 60px;          
+  font-family: 'Alfa Slab One', 'Rockwell', 'Arial Black', sans-serif;
+    font-weight: normal;         
+    font-size: 40px;
+    color: #ffffff;          
     letter-spacing: -1px;       
     margin: 10px 0;             
     line-height: 1.2;
